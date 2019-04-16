@@ -1,14 +1,8 @@
-# vkcoinapi
+# vcoin-io
 Работа с API VK Coin
+
 # Установка
-### Windowns:
-* Скачайте и установите последнюю версию [Node.JS](https://nodejs.org/en/download/)
-* Создайте в удобном месте папку, например **vkcoin**
-* Скачайте [репозиторий](https://github.com/fakemancat/vkcoinapi/archive/master.zip)
-* Распакуйте папку vkcoinapi-master в папку **(путь до вашей папки)\vkcoinapi**, например: **C:\Users\fakemancat\vkcoin\vkcoinapi**
-* Перейдите в командную строку: Win + R > cmd
-* Перейдите в папку: **cd (путь до вашей папки)\vkcoinapi**
-* Пропишите: npm i
+`npm i vcoin-io`
 
 ### Ubuntu:
 * Установите Node.JS по [этому](https://www.digitalocean.com/community/tutorials/node-js-ubuntu-16-04-ru) гайду
@@ -20,7 +14,7 @@
 
 Теперь его нужно открыть и импортировать библиотеку:
 ```js
-const VKCOINAPI = require('./vkcoinapi');
+const VKCOINAPI = require('vcoin-io');
 
 const vkcoin = new VKCOINAPI(options = {});
 ```
@@ -28,8 +22,9 @@ const vkcoin = new VKCOINAPI(options = {});
 |Опция|Тип|Описание|
 |-|-|-|
 |key|String|Ключ для взаимодействия с API|
-|userId|Number|Ваш айди ВК|
+|userId|Number|Ваш ID ВК|
 |token|String|Ваш [токен](https://vkhost.github.io) ВК|
+
 # Методы
 getTransactionList - Получает список ваших транзакций
 
@@ -61,7 +56,7 @@ run().catch(console.error);
 
 |Параметр|Тип|Описание|
 |-|-|-|
-|toId|Number|Айди получателя|
+|toId|Number|ID получателя|
 |amount|Number|Сумма перевода|
 #
 getLink - Получает ссылку для перевода
@@ -124,8 +119,10 @@ run().catch(console.error);
 |Параметр|Тип|Описание|
 |-|-|-|
 |userIds|Array<Number>|Массив айди пользователей|
+
 # Updates
 **updates** - Позволяет "прослушивать" события в VK Coin. Пока что я реализовал перехват входящего платежа, но вскоре придумаю что-нибудь ещё. И да, впервые работаю с сокетами :)
+
 ### Запуск
 Для запуска прослушивания есть специальный метод startPolling. Он является асинхронным, поэтому запускать его нужно в асинхронной функции:
 
@@ -159,9 +156,11 @@ event - Объект, который хранит в себе информаци
 
 |Параметр|Тип|Описание|
 |-|-|-|
-|amount|Number|Количество коинов, которые послупили на счёт|
-|fromId|Number|Айди плательщика|
-|id|Number|Айди платежа|
+|amount|Number|Количество коинов, которые поступили на счёт|
+|fromId|Number|ID плательщика|
+|id|Number|ID платежа|
+
 # Ссылки
-* Мой вк: https://vk.com/fakeman.cat_fmc
+* [Разработчик vcoinapi](https://vk.com/fakeman.cat_fmc)
+* [Кто-то еще](#)
 * Беседа: https://vk.me/join/AJQ1d_JeTA/o0GfCxwihS_6E

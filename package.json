@@ -1,6 +1,6 @@
 {
-    "name": "vkcoin",
-    "version": "1.1.1",
+    "name": "vcoin-io",
+    "version": "0.0.1",
     "description": "Работа с API VK Coin",
     "main": "index.js",
     "dependencies": {
@@ -15,20 +15,18 @@
       "coin",
       "api",
       "vkcoinapi",
-      "vk coin api"
+      "vk coin api",
+       "vcoin-io"
     ],
     "author": "Fakeman Cat",
     "license": "ISC",
-    "directories": {
-      "doc": "docs"
-    },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/fakemancat/vkcoinapi.git"
+      "url": "git+https://github.com/xtcry/vcoin-io.git"
     },
     "bugs": {
-      "url": "https://github.com/fakemancat/vkcoinapi/issues"
+      "url": "https://github.com/xtcry/vcoin-io/issues"
     },
-    "homepage": "https://github.com/fakemancat/vkcoinapi#readme"
+    "homepage": "https://github.com/xtcry/vcoin-io#readme"
   }
   
