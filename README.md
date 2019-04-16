@@ -1,17 +1,32 @@
 # vcoin-io
+
+<p>
+    <a href="https://www.npmjs.com/package/vcoin-io"><img src="https://img.shields.io/npm/v/vcoin-io.svg?style=flat-square" alt="NPM version"></a>
+    <!--<a href="https://www.npmjs.com/package/vcoin-io"><img src="https://img.shields.io/npm/dt/vcoin-io.svg?style=flat-square" alt="NPM downloads"></a>-->
+</p>
+
 Работа с API VK Coin
 
-# Установка
-`npm i vcoin-io`
+## Установка
+> **[Node.js](https://nodejs.org/) 8.0.0 или новее**
 
-# Начало работы
-Для начала использования, вам нужно создать в своей папке исполняемый файл, пусть это будет **index.js**
+### NPM
+```shell
+npm i vcoin-io
+```
+
+## Примеры использования
+Для начала использования нужно создать в своей папке исполняемый файл, пусть это будет `index.js`
 
 Теперь его нужно открыть и импортировать библиотеку:
 ```js
-const vcoinio = require('vcoin-io');
+const VCOINIO = require('vcoin-io');
 
-const vkcoin = new vcoinio(options = {});
+const vkcoin = new VCOINIO({
+    key: "BN^!uqga7g2i#ga38w7Gur^gb3^47eg&",
+    userId: 101,
+    token: "qqqqqqqqqTOKENqVKqqqqqqqqqqq"
+});
 ```
 
 |Опция|Тип|Описание|
@@ -158,4 +173,4 @@ event - Объект, который хранит в себе информаци
 # Ссылки
 * [Разработчик vcoinapi](https://github.com/fakemancat)
 * [Кто-то еще](https://github.com/xtcry)
-* [Dev Беседа VK](vk.me/join/AJQ1d_JeTA/o0GfCxwihS_6E)
+* [Dev Беседа VK](https://vk.me/join/AJQ1d_JeTA/o0GfCxwihS_6E)
