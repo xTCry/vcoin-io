@@ -9,7 +9,7 @@
 
 Теперь его нужно открыть и импортировать библиотеку:
 ```js
-const  vcoinio= require('vcoin-io');
+const vcoinio = require('vcoin-io');
 
 const vkcoin = new vcoinio(options = {});
 ```
@@ -157,5 +157,5 @@ event - Объект, который хранит в себе информаци
 
 # Ссылки
 * [Разработчик vcoinapi](https://github.com/fakemancat)
-* [Кто-то еще](#)
-* [Беседа VK](vk.me/join/AJQ1d_JeTA/o0GfCxwihS_6E)
+* [Кто-то еще](https://github.com/xtcry)
+* [Dev Беседа VK](vk.me/join/AJQ1d_JeTA/o0GfCxwihS_6E)
