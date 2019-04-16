@@ -4,19 +4,14 @@
 # Установка
 `npm i vcoin-io`
 
-### Ubuntu:
-* Установите Node.JS по [этому](https://www.digitalocean.com/community/tutorials/node-js-ubuntu-16-04-ru) гайду
-* Создайте в удобном месте папку, например **vkcoin**: mkdir vkcoin
-* Перейдите в неё: cd vkcoin
-* Пропишите: git clone https://github.com/fakemancat/vkcoinapi vkcoinapi | cd vkcoinapi | npm i
 # Начало работы
 Для начала использования, вам нужно создать в своей папке исполняемый файл, пусть это будет **index.js**
 
 Теперь его нужно открыть и импортировать библиотеку:
 ```js
-const VKCOINAPI = require('vcoin-io');
+const  vcoinio= require('vcoin-io');
 
-const vkcoin = new VKCOINAPI(options = {});
+const vkcoin = new vcoinio(options = {});
 ```
 
 |Опция|Тип|Описание|
@@ -161,6 +156,6 @@ event - Объект, который хранит в себе информаци
 |id|Number|ID платежа|
 
 # Ссылки
-* [Разработчик vcoinapi](https://vk.com/fakeman.cat_fmc)
+* [Разработчик vcoinapi](https://github.com/fakemancat)
 * [Кто-то еще](#)
-* Беседа: https://vk.me/join/AJQ1d_JeTA/o0GfCxwihS_6E
+* [Беседа VK](vk.me/join/AJQ1d_JeTA/o0GfCxwihS_6E)
